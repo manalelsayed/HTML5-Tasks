@@ -84,7 +84,7 @@ img:active{
     transform: scale(10,10);
 }
 
-@media all and (orientation:portrait){
+/* @media all and (orientation:portrait){
     img{
         transform: rotate(25deg);
         border: 2px dashed goldenrod;
@@ -98,4 +98,4 @@ img:active{
 
     }
   
-}
+} */

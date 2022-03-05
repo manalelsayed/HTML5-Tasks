@@ -1,0 +1,12 @@
+img{
+    transform: rotate(25deg);
+    border: 2px dashed goldenrod;
+}
+img:hover{
+    border: 2px dashed navy;
+}
+
+section{
+    box-shadow:  navy 10px 10px 10px  , goldenrod -10px -10px 10px ;
+
+}
