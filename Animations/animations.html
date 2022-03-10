@@ -26,33 +26,39 @@
                 animation-direction: alternate;
                 animation-delay: 5s;
             } */
+            :root{
+                --crimson:crimson;
+                --top1:10px;
+                --left1:10px;
+                --top2:250px;
+                --left2:650px;
+            }
             @keyframes sectionPercentAnmie{
-                 0%{
-                    margin-left: 10px;
-                    margin-top: 10px;
-                    background-color: crimson;
-                 }
+                
                  25%{
-                    margin-left: 600px;
-                    margin-top: 10px;
+                    margin-left: var(--left2);
+                    margin-top: var(--top1);
                     background-color: wheat;
                  }
                  75%{
-                    margin-left: 600px;
-                     margin-top: 200px;
-                    background-color: crimson;
+                    margin-left: var(--left2);
+                     margin-top: var(--top2);
+                    background-color: var(--crimson);;
                  }
-                 98%{
-                     margin-left: 10px;
-                     margin-top: 200px;
+                 90%{
+                     margin-left: var(--left1);
+                     margin-top: var(--top2);
                      background-color: wheat;
                  }
                   }
         
             #percentAnmie{
                 border: 1px solid black;
-                width:10%;
+                width:100px;
                 height: 100px;
+                margin-left: var(--left1);
+                    margin-top: var(--top1);
+                    background-color: var(--crimson);
                 animation: sectionPercentAnmie;
                 animation-duration: 10s;
                 animation-iteration-count: infinite;
