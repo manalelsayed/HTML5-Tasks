@@ -1,0 +1,39 @@
+[
+  {
+    "_id": 10,
+    "firstName": "badr",
+    "lastName": "ahmed",
+    "age": 22,
+    "salary": 5550,
+    "address": { "city": "cairo", "street": 10, "building": 8 },
+    "courses": ["sqlserver", "mvc", "signalR", "asp.net"]
+  },
+  {
+    "_id": 2,
+    "firstName": "mona",
+    "lastName": "mohammed",
+    "age": 21,
+    "salary": 3600,
+    "address": { "city": "mansoura", "street": 20, "building": 18 },
+    "courses": ["es6", "js", "mongodb", "expressjs"]
+  },
+  {
+    "_id": 3,
+    "firstName": "mazen",
+    "lastName": "ali",
+    "age": 30,
+    "salary": 7010,
+    "address": { "city": "cairo", "street": 10, "building": 5 },
+    "courses": ["asp.net", "mvc", "EF"]
+  },
+  {
+    "_id": 4,
+    "firstName": "ebtesam",
+    "lastName": "ahmed",
+    "age": 28,
+    "salary": 6200,
+    "address": { "city": "mansoura", "street": 14, "building": 7 },
+    "courses": ["js", "html5", "signalR", "expressjs", "bootstrap", "es6"]
+  },
+  { "firstName": "Nadia", "lastName": "Saleh", "salary": 5550, "_id": 12 }
+]
