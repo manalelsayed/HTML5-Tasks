@@ -1,22 +1,24 @@
 window.onload=function(){
-  $("li").click(function(){
+  $("ul").on("click","li",(function(){
       $(this).css({
         backgroundColor: "lightgrey"
       });
       $(this).addClass("selected");
           
       })
-      $("#to-list1").click(function(){
-        $("li").css({
-            backgroundColor: "white"
-          });
-          $(".selected").appendTo("#list1");
-          $(".selected").removeClass("selected");
+   
+  )
+  $("#to-list1").click(function(){
+    $("li").css({
+        backgroundColor: "white"
+      });
+      $(".selected").appendTo("#list1");
+      $(".selected").removeClass("selected");
 
 
-          
+      
 
-  })
+})
   $("#to-list2").click(function(){
     $("li").css({
         backgroundColor: "white"
@@ -33,7 +35,7 @@ $("#enter").on('keyup', function (e) {
         $(li).text(document.getElementById("enter").value);
         document.getElementById("enter").value=null;
 
-        $(li).appendTo("#list2");
+        $(li).appendTo("#list1");
         }
         else{
             alert("you must enter a value")
