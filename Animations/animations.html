@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+/*
+        @keyframes sectionAnmie{
+            from{
+                border:1px solid black;
+            }
+            to{
+                border: 5px solid salmon;
+                border-radius: 50%;
+                background-color: aqua;
+            }
+        }
+         #fromToAnmie{
+                border: 1px solid black;
+                margin: 20px auto;
+                width: 30%;
+                height: 500px;
+                animation: sectionAnmie;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-delay: 5s;
+            } */
+            @keyframes sectionPercentAnmie{
+                 0%{
+                    margin-left: 10px;
+                    margin-top: 10px;
+                    background-color: crimson;
+                 }
+                 25%{
+                    margin-left: 600px;
+                    margin-top: 10px;
+                    background-color: wheat;
+                 }
+                 75%{
+                    margin-left: 600px;
+                     margin-top: 200px;
+                    background-color: crimson;
+                 }
+                 98%{
+                     margin-left: 10px;
+                     margin-top: 200px;
+                    background-color: wheat;
+                 }
+                  }
+        
+            #percentAnmie{
+                border: 1px solid black;
+                width:10%;
+                height: 100px;
+                animation: sectionPercentAnmie;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                transition: transform 2s;
+                animation-play-state: paused;
+
+            }
+            #percentAnmie:hover{
+                animation-play-state: paused;
+                transform: scale(1.5);
+            }
+            div{
+                margin: 20px auto;
+                width: 60%;
+                height: 400px;
+                border: 2px solid crimson;
+            }
+    </style>
+</head>
+<body>
+    
+ <!--<section id="fromToAnmie"></section>-->  
+ <button id="start">Start</button>
+ <button id="stop">Stop</button>
+ <div>
+    <div id="percentAnmie"></div>
+ </div>
+
+ 
+
+</body>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+        
+    $("#start").click(function(){
+        $("#percentAnmie").css("-webkit-animation-play-state", "running")
+    })
+    $("#stop").click(function(){
+        $("#percentAnmie").css("-webkit-animation-play-state", "paused")
+    })
+</script>
+</html>
