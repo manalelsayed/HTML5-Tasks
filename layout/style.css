@@ -1,0 +1,113 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#maincontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 500px;
+    margin: 20px auto;
+}
+#maincontainer section{
+    width: 100px;
+    height: 100%;
+}
+body{
+    font-family: 'Monospace';
+
+}
+#sectionOne{
+    flex-grow: 1;
+    margin: 20px auto;}
+#sectionTwo{
+    flex-grow: 4;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
+}
+#sectionTwo img{ 
+    width: 24.6%;
+    height: 90%;
+}
+#mainnav{
+    grid-column: 1/5;
+    grid-row: 1/2;
+    background-color: #ddb892;
+    display: block;
+    width: 100%;
+    margin-top:2px;
+    text-align: center;
+    
+}
+#mainnav a{
+    padding-right: 15px;
+    padding-top: 5px;
+    color: #ccd5ae;
+}
+#divOne{
+grid-column: 1/5;
+grid-row: 2/3;
+}
+#divTwo{
+    grid-column: 1/5;
+    grid-row: 3/4;
+ }
+#divThree{
+        grid-column: 1/5;
+        grid-row: 4/5;
+        }
+#logo{
+    width: 60%;
+    height: 10%;
+    margin: 25px auto;
+}
+
+section[id="sectionOne"] ul{
+    list-style: none;
+    margin: 20px;
+}
+
+/* nav[id="mainnav"] ul{
+        display:inline-block;
+        text-align:center; 
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+} */
+section[id="sectionOne"] li{
+color: #ccd5ae;
+font-weight: bold;
+}
+#mainnav a,li:hover{
+    color: white;
+    cursor: pointer;
+}
+div[id="flicker"] img{
+    width: 80px;
+    height: 50px;
+    grid-template: img;
+    opacity: 0.5;
+    transition: all 1s;
+    
+}
+div[id="flicker"] img:hover{
+    opacity: 1;
+}
+
+#flicker{
+    display:grid;
+    grid-template-areas: "img img img" 
+                         "img img img"
+                         "img img img";
+}
+#socialLinks img{
+    width: 35px;
+    height: 35px;
+    opacity: 0.8;
+}
+#socialLinks img:hover{
+    opacity: 1;
+    cursor: pointer;
+}

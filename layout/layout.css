@@ -1,0 +1,82 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+nav{
+    opacity: 0.5;
+
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    min-height: 10vh;
+    align-items: center;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: monospace;
+    color: brown;
+}
+.cover{
+    height: 90vh;
+    background-image:url(imgs/9.jpg) ;
+    color: aliceblue;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.cover>h2{
+text-align: center;
+margin: 2rem;
+}
+.cover>button{
+    padding: 1.5rem 2rem;
+    border: none;
+    border-radius: 10px;
+    background-image:linear-gradient(to left,transparent,rgb(203, 211, 86)) ;
+}
+.cover>button:hover{
+   cursor: painter;
+    background-image:linear-gradient(to right,transparent,rgb(203, 211, 86)) ;
+    font-weight: bold;
+}
+.intro{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+.intro>.intro-img , .intro>.intro-text{
+    flex:1 2 23rem;
+}
+
+.intro-img>img{
+    width: 100%;
+    height: 100%;
+}
+.intro-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to bottom,transparent,rgb(116, 96, 96));  
+}
+.tracks{
+    margin-top: 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.tracks>img{
+    width: 200px;
+    height: 200px;
+}
